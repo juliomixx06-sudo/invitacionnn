@@ -3,27 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Invitación A LA FIESTA DE CONCHITA</title>
+<title>Invitación A La Fiesta De Conchita</title>
 <style>
-  /* Fuente Baloo 2 incrustada para consistencia en móviles y PC */
-  @font-face {
-    font-family: 'Baloo 2';
-    src: url('https://github.com/google/fonts/raw/main/ofl/baloo2/Baloo2-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
+  /* Fuente */
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
 
   body {
-    margin: 0;
-    padding: 20px;
     background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
     background-size: 800% 800%;
-    font-family: 'Baloo 2', sans-serif !important;
-    font-weight: 400;
+    font-family: 'Baloo 2', cursive;
     color: #fff;
     text-align: center;
+    padding: 40px;
     animation: bgshift 10s ease infinite;
-    overflow-x: hidden;
   }
 
   @keyframes bgshift {
@@ -35,36 +27,35 @@
     background: rgba(0, 0, 0, 0.4);
     border: 4px solid #fff;
     border-radius: 20px;
-    padding: 25px;
-    max-width: 90%;
-    margin: 20px auto;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-    word-wrap: break-word;
+    padding: 40px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 8px #ffeb3b;
+    text-shadow: 2px 2px 10px #ffeb3b;
   }
 
   h2 {
     color: #ffeb3b;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
 
   p {
-    font-size: 1.05em;
-    line-height: 1.4;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    font-size: 1.3em;
+    line-height: 1.5;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
   }
 
   .vinilo {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background: radial-gradient(circle at 50% 50%, #222 30%, #000 70%);
     border-radius: 50%;
-    margin: 15px auto;
+    margin: 20px auto;
     position: relative;
     animation: spin 10s linear infinite;
   }
@@ -72,12 +63,13 @@
   .vinilo::before {
     content: "";
     position: absolute;
-    top: 45%;
-    left: 45%;
+    top: 50%;
+    left: 50%;
     width: 20px;
     height: 20px;
     background: #ffeb3b;
     border-radius: 50%;
+    transform: translate(-50%, -50%);
   }
 
   @keyframes spin {
@@ -90,29 +82,29 @@
     color: #000;
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 1em;
+    border-radius: 30px;
+    font-size: 1.2em;
     transition: 0.3s;
     display: inline-block;
   }
 
   .boton:hover {
     background: #fff;
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 
   footer {
-    margin-top: 25px;
+    margin-top: 40px;
     font-size: 0.9em;
   }
 
+  /* Ajustes para pantallas pequeñas */
   @media (max-width: 480px) {
-    h1 { font-size: 1.7em; }
-    h2 { font-size: 1.15em; }
-    p { font-size: 0.95em; }
-    .vinilo { width: 80px; height: 80px; }
-    .boton { font-size: 0.95em; padding: 7px 14px; }
+    h1 { font-size: 2em; }
     .invitacion { padding: 20px; }
+    p { font-size: 1em; }
+    .vinilo { width: 100px; height: 100px; }
+    .boton { font-size: 1em; padding: 8px 16px; }
   }
 </style>
 </head>
@@ -129,8 +121,8 @@
       📅 Fecha: VIERNES 28 DE NOVIEMBRE <br>
       🕖 Hora: 6:00 PM
     </p>
-    <a href="https://www.youtube.com/watch?v=QDYfEBY9NM4" target="_blank" class="boton">
-      🎶 Escuchar "Let It Be"
+    <a href="https://www.youtube.com/watch?v=ZhfWiU8wGCc&list=RDZhfWiU8wGCc&start_radio=1" target="_blank" class="boton">
+      🎶 Escuchar "WOMAN"
     </a>
   </div>
   <footer>
