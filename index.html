@@ -5,16 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Invitación Beatlemaníaca</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+  /* Importar Baloo 2 con peso regular para evitar curvatura excesiva */
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&display=swap');
 
   body {
+    margin: 0;
+    padding: 20px;
     background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
     background-size: 800% 800%;
-    font-family: 'Baloo 2', cursive;
+    font-family: 'Baloo 2', sans-serif !important; /* fuerza el uso de la fuente */
+    font-weight: 400;
     color: #fff;
     text-align: center;
-    padding: 40px;
     animation: bgshift 10s ease infinite;
+    overflow-x: hidden;
   }
 
   @keyframes bgshift {
@@ -26,32 +30,33 @@
     background: rgba(0, 0, 0, 0.4);
     border: 4px solid #fff;
     border-radius: 20px;
-    padding: 40px;
-    max-width: 600px;
-    margin: 50px auto;
+    padding: 30px;
+    max-width: 90%;
+    margin: 30px auto;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    word-wrap: break-word;
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 10px;
     text-shadow: 2px 2px 10px #ffeb3b;
   }
 
   h2 {
     color: #ffeb3b;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   p {
-    font-size: 1.3em;
+    font-size: 1.1em;
     line-height: 1.5;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
   }
 
   .vinilo {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     background: radial-gradient(circle at 50% 50%, #222 30%, #000 70%);
     border-radius: 50%;
     margin: 20px auto;
@@ -81,7 +86,7 @@
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 30px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     transition: 0.3s;
     display: inline-block;
   }
@@ -96,9 +101,13 @@
     font-size: 0.9em;
   }
 
+  /* Ajustes para pantallas pequeñas */
   @media (max-width: 480px) {
-    h1 { font-size: 2em; }
-    .invitacion { padding: 20px; }
+    h1 { font-size: 1.8em; }
+    h2 { font-size: 1.2em; }
+    p { font-size: 1em; }
+    .vinilo { width: 100px; height: 100px; }
+    .boton { font-size: 1em; padding: 8px 16px; }
   }
 </style>
 </head>
@@ -116,7 +125,7 @@
       🕖 Hora: 6:00 PM
     </p>
     <a href="https://www.youtube.com/watch?v=QDYfEBY9NM4" target="_blank" class="boton">
-      🎶 Escuchar "Let It Be"
+      🎶 Escuchar "Let It Be"
     </a>
   </div>
   <footer>
